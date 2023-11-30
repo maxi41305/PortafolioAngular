@@ -1,0 +1,22 @@
+<section id="content">
+    
+    <article class="article-item article-detail" *ngFor="let educacions of educacion">
+        <div class="image-wrap">
+            <img [src]="linkImg(educacions.date)">
+        </div>
+        <h1 class="subheader">{{educacions.nombre}}</h1>
+        <p>
+            {{educacions.descripcion}}
+        </p>
+        <p>
+            {{educacions.descripcionlarga}}
+        </p>
+        <div class="clearfix"></div>
+    </article>
+  
+</section>
+
+
+
+  <!-- limpiarflotado-->
+  <div class="clearfix"></div>

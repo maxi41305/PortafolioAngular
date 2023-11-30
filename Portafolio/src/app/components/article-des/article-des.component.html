@@ -1,0 +1,22 @@
+<section id="content">
+    
+    <article class="article-item article-detail" *ngFor="let proyecto of proyectos">
+        <div class="image-wrap">
+            <img [src]="linkImg(proyecto.date)">
+        </div>
+        <h1 class="subheader">{{proyecto.nombre}}</h1>
+        <p>
+            {{proyecto.descripcion}}
+        </p>
+        <p>
+            {{proyecto.descripcionlarga}}
+        </p>
+        <div class="clearfix"></div>
+    </article>
+  
+</section>
+
+<app-btnredes></app-btnredes>
+
+  <!-- limpiarflotado-->
+  <div class="clearfix"></div>

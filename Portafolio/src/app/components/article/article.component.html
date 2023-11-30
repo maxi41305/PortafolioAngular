@@ -1,0 +1,41 @@
+<!--cards -->
+<div ></div>
+   <div class="card" *ngFor="let proyectos of proyecto ">
+     
+
+
+  
+   <div class="image">
+       <img [src]="linkImg(proyectos.date)">
+    </div>
+    <div class="title">
+   <h2>{{proyectos.nombre}}</h2>
+    </div>
+    <div class="des">
+     <p>{{proyectos.descripcion}}</p>
+    
+   
+    </div>
+    <button  [routerLink]="['article/', proyectos.id_proyecto]" >Leer Mas...</button>
+    </div>
+ 
+   <div class="card" *ngFor="let educacions of educacion ">
+
+
+  
+      <div class="image">
+         <img [src]="linkImg(educacions.date)">
+       </div>
+       <div class="title">
+      <h2>{{educacions.nombre}}</h2>
+       </div>
+       <div class="des">
+        <p>{{educacions.descripcion}}</p>
+       </div>
+       <button  [routerLink]="['educacion/', educacions.id_educacion]" >Leer Mas...</button>
+   
+       </div>
+          
+       
+       <!-- limpiarflotado-->
+           <div class="clearfix"></div>
